@@ -10,15 +10,12 @@ div.first{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 600px;
     margin-top: 20px;
 }
 .link ul{
     list-style: none;
 }
-.link  li{
-    float: left;
-}
+
 .link li a{
     text-decoration: none;
     padding: 30px;
@@ -28,7 +25,7 @@ div.first{
 .link{
     display: flex;
     align-items: center;
-    gap: 300px;
+    gap: 20px;
 }
 .contacts a{
     gap: 22px;
@@ -86,11 +83,11 @@ div.first{
     display: flex;
 }
 .sir video{
-    width: 700px;
+    width: 400px;
     border: none;
 }
 .yarn1 h1{
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: 100;
 }
 .yarn1 p{
@@ -104,11 +101,11 @@ div.first{
     display: flex;
 }
 .sir2 video{
-    width: 700px;
+    width: 400px;
     border: none;
 }
 .yarn2 h1{
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: 100;
 }
 .yarn2 p{
@@ -121,7 +118,7 @@ div.first{
  flex-direction: row;
  align-content: center;
  justify-content: center;
- gap: 100px;   
+ gap: 20px;   
 }
 .open{
     height: 50px;
@@ -149,7 +146,7 @@ div.first{
     gap: 30px;
 }
 .les{
-    gap: 30;
+    gap: 30px;
     justify-content: center;
     align-content: center;
 }
@@ -186,7 +183,7 @@ div.first{
     font-size: 2rem;
 }
 .les2{
-    gap: 30;
+    gap: 30px;
 }
 .les2 img{
     height: 700px;
@@ -195,7 +192,7 @@ div.first{
     justify-content: center;
 }
 .only2 h1{
-    font-size: 7rem;
+    font-size: 5rem;
     text-align: center;
     font-weight: 100;
 }
@@ -204,7 +201,7 @@ div.first{
     justify-content: center;
     align-content: center;
     flex-direction: row;
-    gap: 50px;
+    gap: 20px;
 }
 .circle{
     background-color: rgb(86, 122, 131);
@@ -240,7 +237,7 @@ div.first{
     justify-content: center;
 }
 .pure h1{
-    font-size: 7rem;
+    font-size: 5rem;
     text-align: center;
     font-weight: 100;
 }
@@ -248,13 +245,13 @@ div.first{
     display: flex;
     justify-content: center;
     align-content: center;
-    gap: 150px;
+    gap: 30px;
 }
 .canna{
     width: 500px;
 }
 .canna h1{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: lighter;
 }
 .canna p{
@@ -310,11 +307,12 @@ div.first{
 .last{
     background-color: #e9e6e6;
     gap: 30px;
+    
 }
 .people{
     display: flex;
     justify-content: center;
-    gap: 400px;
+    gap: 30px;
 }
 .save h1{
     font-weight: lighter;
