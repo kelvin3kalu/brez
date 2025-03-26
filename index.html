@@ -9,20 +9,31 @@
     <title>Brez</title>
 </head>
 <body>
-    <nav class="nav link">
-        <div class="link">
-            <ul>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Contacts</a></li>
-            </ul>
-            <a href=""><img src="ber-removebg-preview.png" alt=""></a>
-            <div class="Contacts">
-                <a href=""><img src="icons8-user-24.png" alt=""></a>
-                <a href=""><img src="icons8-paper-bag-32.png" alt=""></a>
-            </div>
 
+    <nav class="navs">
+        <div class="nav-links">
+            <div class="link">
+                <ul>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </div>
+                <a href=""><img src="ber-removebg-preview.png" alt=""></a>
+                <div class="Contacts">
+                    <a href=""><img src="icons8-user-24.png" alt=""></a>
+                    <a href=""><img src="icons8-paper-bag-32.png" alt=""></a>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
         </div>
     </nav>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Contacts</a></li>
+            <a href=""><img src="icons8-user-24.png" alt=""></a>
+            <a href=""><img src="icons8-paper-bag-32.png" alt=""></a>
+        </ul>
+    </div>
     <div class="first">
         <video loop muted autoplay>
             <source src="brez video.mp4" type="video/mp4">
@@ -96,13 +107,17 @@
         
         <div class="picture2">
             <div class="les2">
-                <img src="d brez.webp" alt="">
+                <div class="big-img">
+                    <img src="d brez.webp" alt="">
+                </div>
                 <div class="desc2">
                     <a href="">Duo</a>
                 </div>
             </div>
             <div class="les2">
-                <img src="e brez.webp" alt="">
+                <div class="big-img">
+                    <img src="e brez.webp" alt="">
+                </div>
                 <div class="desc2">
                     <a href="">Trio</a>
                 </div>
@@ -235,6 +250,6 @@
              ©2024, DrinkBrez LLC, All Rights Reserved &caret;; <br>
         </div>
     </div>
-  
+  <script src="script.js"></script>
 </body>
 </html>                

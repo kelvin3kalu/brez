@@ -6,27 +6,96 @@ div.first{
     background-position: center;
     background:fixed;
 }
-.nav link{
+.navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    background: #333;
+    color: white;
+    padding: 15px 20px;
 }
-.link ul{
-    list-style: none;
+/* .navs{
+    position: fixed;
+} */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.link li a{
-    text-decoration: none;
-    padding: 30px;
-    color: black;
-    font-size: 22px;
-}
-.link{
+.nav-links {
+    list-style: none;
     display: flex;
-    align-items: center;
-    gap: 20px;
+    gap: 15px;
+    justify-content: center;
+    justify-content: space-between;
 }
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.hamburger {
+    font-size: 24px;
+    display: none;
+    cursor: pointer;
+    color: black;
+}
+
+/* Sliding Sidebar */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide sidebar initially */
+    width: 250px;
+    height: 100%;
+    background: #333;
+    padding: 20px;
+    transition: left 0.3s ease-in-out; /* Smooth sliding animation */
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-menu ul li {
+    padding: 10px;
+}
+
+.mobile-menu ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+/* Show sidebar when active */
+.mobile-menu.active {
+    left: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
 .contacts a{
     gap: 22px;
 }
@@ -81,13 +150,14 @@ div.first{
     position: absolute;
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
 }
 .sir video{
     width: 400px;
     border: none;
 }
 .yarn1 h1{
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 100;
 }
 .yarn1 p{
@@ -99,13 +169,14 @@ div.first{
     position: absolute;
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
 }
 .sir2 video{
     width: 400px;
     border: none;
 }
 .yarn2 h1{
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 100;
 }
 .yarn2 p{
@@ -115,6 +186,7 @@ div.first{
 }
 .next{
  display: flex;
+ flex-wrap: wrap;
  flex-direction: row;
  align-content: center;
  justify-content: center;
@@ -134,7 +206,7 @@ div.first{
     justify-content: center;
 }
 .only h1{
-    font-size: 7rem;
+    font-size: 4rem;
     text-align: center;
     font-weight: 100;
 }
@@ -144,6 +216,7 @@ div.first{
     align-content: center;
     flex-direction: row;
     gap: 30px;
+    flex-wrap: wrap;
 }
 .les{
     gap: 30px;
@@ -158,6 +231,7 @@ div.first{
     justify-content: center;
     display: flex;
     text-align: center;
+    flex-wrap: wrap;
 }
 .desc a{
     text-decoration: none;
@@ -166,15 +240,16 @@ div.first{
 }
 .picture2{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    flex-direction: row;
     gap: 30px;
 }
 .desc2{
     align-content: center;
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
 }
 .desc2 a{
@@ -192,29 +267,31 @@ div.first{
     justify-content: center;
 }
 .only2 h1{
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     font-weight: 100;
 }
 .cfat{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     flex-direction: row;
     gap: 20px;
 }
 .circle{
-    background-color: rgb(86, 122, 131);
+    background-color: hsl(193, 91%, 87%);
     border-radius: 500px;
     height: 350px;
     width: 350px;
-    flex-wrap: wrap;
+    word-break: break-all;
 }
 .circle p{
     font-size: 27px;
 }
 .general{
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     gap: 20px;
@@ -230,6 +307,7 @@ div.first{
     justify-content: center;
     align-content: center;
     display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -237,7 +315,7 @@ div.first{
     justify-content: center;
 }
 .pure h1{
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     font-weight: 100;
 }
@@ -246,6 +324,7 @@ div.first{
     justify-content: center;
     align-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 .canna{
     width: 500px;
@@ -260,6 +339,7 @@ div.first{
 .thc{
     display: flex;
     gap: 50px;
+    flex-wrap: wrap;
 }
 .thc button{
     height: 50px;
@@ -271,6 +351,7 @@ div.first{
 .cbn{
     display: flex;
     gap: 50px;
+    flex-wrap: wrap;
 }
 .cbn button{
     height: 50px;
@@ -291,6 +372,7 @@ div.first{
 .ccof{
     display: flex;
     gap: 50px;
+    flex-wrap: wrap;
 }
 .ccof button{
     height: 70px;
@@ -302,6 +384,7 @@ div.first{
     justify-content: center;
     align-content: center;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .last{
@@ -313,6 +396,7 @@ div.first{
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 .save h1{
     font-weight: lighter;
@@ -332,7 +416,7 @@ div.first{
     text-decoration: none;
     color: black;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 .info h1{
     font-style: light;
@@ -343,7 +427,7 @@ div.first{
     text-decoration: none;
     color: black;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 .wholesale h1{
     font-style: light;
@@ -354,7 +438,7 @@ div.first{
     text-decoration: none;
     color: black;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 .crafted h1{
     font-style: light;
@@ -365,7 +449,7 @@ div.first{
     text-decoration: none;
     color: black;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 .our p{
     font-family: sans-serif;
@@ -393,8 +477,26 @@ div.first{
     justify-content: center;
     cursor: pointer;
 }
-@media screen and(max-width:600px) {
-    div{
-        width: 100%;
+@media only screen and (max-width: 1200px) {
+    body {
+      max-width: 100%;
+      padding: 0 10px;
     }
-}
+  }
+
+  @media only screen and (max-width: 900px) {
+    body {
+      padding: 0 5px;
+    }
+  }    
+
+@media only screen and (max-width: 600px) {
+    body {
+      gap: none;
+      padding: 0;
+    }
+    .big-img{
+        width: 300px;
+        padding: 0px;
+    }
+}  
